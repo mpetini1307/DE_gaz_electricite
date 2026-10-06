@@ -1,0 +1,2710 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/5/2026 11:24:52 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-951B3GS"
+  DTS:CreatorName="DESKTOP-951B3GS\PC"
+  DTS:DTSID="{48E9F1EB-B99A-4712-A762-C04E7B104C20}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{0645B354-28B9-4EC8-9682-9B454ABEC5A9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[connection_flow]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{88E153DA-9568-4F89-BF1E-71F3D30317B9}"
+      DTS:ObjectName="connection_flow">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\Belgium\PhysicalFlows_12.1.G_r3\2014_04_PhysicalFlows_12.1.G_r3.csv_BE.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{38E74498-3277-4C46-9672-1269FB9408D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DateTime(UTC)"
+              DTS:DTSID="{3112DEC8-62E3-44A1-BE6B-FB9FF375FB43}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ResolutionCode"
+              DTS:DTSID="{5E0D65C6-3704-4019-B16F-E8443485722C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutAreaCode"
+              DTS:DTSID="{F961E232-6FDD-45AF-AF15-8C6399622A40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutAreaDisplayName"
+              DTS:DTSID="{A63A1136-0396-4FEC-A52B-018A77E4BFA8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutAreaTypeCode"
+              DTS:DTSID="{91F9E921-CD73-4589-928E-23132CA153FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OutAreaMapCode"
+              DTS:DTSID="{5BF796F7-259B-497B-A851-D95B93417867}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InAreaCode"
+              DTS:DTSID="{A774EF30-BECD-414D-858D-3403221CE8FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InAreaDisplayName"
+              DTS:DTSID="{66087859-ABC5-42A1-BB11-24580EF62442}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InAreaTypeCode"
+              DTS:DTSID="{A33B90D0-5529-40C9-9534-146FC182D193}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InAreaMapCode"
+              DTS:DTSID="{CD1AF994-7AFB-4DD1-89EF-4FF6CC8A7235}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flow MW "
+              DTS:DTSID="{3103BE28-57A6-43AC-AAB4-C6FC2D9BF64F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UpdateTime(UTC)"
+              DTS:DTSID="{823882C5-8544-4001-B7D7-00F21A30C58F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection_generation]"
+      DTS:CreationName="FLATFILE"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{EE4757DC-12B9-44EC-9FF8-1676FEAF0A6F}"
+      DTS:ObjectName="Connection_generation">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::file_generation]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{1F085BB8-919A-4202-958A-D4DF625DD018}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DateTime(UTC)"
+              DTS:DTSID="{66C8B80D-4686-4B7D-BA9A-BB5200D04FD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ResolutionCode"
+              DTS:DTSID="{5F34912B-78DB-4595-B7A0-3E83A81EC474}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaCode"
+              DTS:DTSID="{ABF25797-9233-4B84-9346-BF058895FB92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaDisplayName"
+              DTS:DTSID="{E14EBDB1-D143-4139-9EE1-A14735AA3F4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaTypeCode"
+              DTS:DTSID="{DC3CB145-D9F3-477F-9853-6ADBE9F59BBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaMapCode"
+              DTS:DTSID="{9857ED9F-D398-4C93-8AD2-FE412B5B9C1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductionType"
+              DTS:DTSID="{EAAD89E6-6831-4744-9355-30750A5049D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ActualGenerationOutput MW "
+              DTS:DTSID="{A7A8CFAB-9542-44AE-B260-A30C135B3321}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ActualConsumption MW "
+              DTS:DTSID="{0CF72F5A-6407-48CE-ABFA-525FF26D4825}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UpdateTime(UTC)"
+              DTS:DTSID="{1B396CEB-C826-4371-BF92-00966CB6B533}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connection_load]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{141ADB25-8C14-4942-9D0C-A6A66455792A}"
+      DTS:ObjectName="Connection_load">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::file_load]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DateTime(UTC)"
+              DTS:DTSID="{61C83EB9-D690-433B-B2C0-34D05B8A3C44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ResolutionCode"
+              DTS:DTSID="{75B1FDA6-A70E-4805-8FA9-59E90BF2776E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaCode"
+              DTS:DTSID="{A9674C6F-C60C-458C-BFF9-AD9A694F400F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaDisplayName"
+              DTS:DTSID="{DE1C0E99-AC4E-4BBC-8FD5-624DC5F257E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaTypeCode"
+              DTS:DTSID="{46CB241E-FB00-4A46-8460-9C92A3B3C4EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AreaMapCode"
+              DTS:DTSID="{F7A33658-4854-41FF-B909-399F3CE9325B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalLoad MW "
+              DTS:DTSID="{FE05F53B-3D55-4126-A4FA-31AB40AF6ED7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UpdateTime(UTC)"
+              DTS:DTSID="{87BC6273-5032-44E5-9DFB-6EA79C1EEA59}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CD96316F-F3C5-407C-A839-4CCED8635BBA}"
+      DTS:Expression="C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\Belgium\PhysicalFlows_12.1.G_r3\2014_04_PhysicalFlows_12.1.G_r3.csv_BE.csv"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="file_flow">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{34A96B23-9308-4F1C-97D3-A8840BB668F1}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\Belgium\AggregatedGenerationPerType_16.1.B_C_r3\2014_03_AggregatedGenerationPerType_16.1.B_C_r3.csv_BE.csv"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="file_generation">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C11A496F-5B50-4686-B128-F003359910E4}"
+      DTS:Expression="  C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\ActualTotalLoad_6.1.A_r3\2014_03_ActualTotalLoad_6.1.A_r3.csv"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="file_load">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Loop_gaz"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{7B23198A-68F7-49AB-9BC7-AF2E76BFA4FB}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop_gaz">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{D2D818F9-9F86-4C37-9B24-F53DE85B2EBB}"
+        DTS:ObjectName="{D2D818F9-9F86-4C37-9B24-F53DE85B2EBB}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\PC\Documents\Projets\TFE\Datas\Gaz\Belgium" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="-1" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables />
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop_generation_folder"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{C3BB74CD-557A-4CE1-9616-A23F01F7F177}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop_generation_folder">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{569AF333-E440-4112-82F7-C88C14D68863}"
+        DTS:ObjectName="{569AF333-E440-4112-82F7-C88C14D68863}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\Belgium\AggregatedGenerationPerType_16.1.B_C_r3" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop_generation_folder\Tâche de flux de données"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tâche de flux de données"
+          DTS:DTSID="{0E9FD9BB-1BBF-4C38-9794-6BC13C6A1514}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tâche de flux de données"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+                  description="Destination OLE DB"
+                  name="Destination OLE DB"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowset">[bronze].[generation]</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Commande SQL à exécuter."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie le mode utilisé pour accéder à la base de données."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="{4DADD913-81C6-4275-AD40-19B379C59EB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-951B3GS_SQLEXPRESS.TFF]"
+                      description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                      errorOrTruncationOperation="Insérer"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrée de destination OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[DateTime(UTC)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DateTime(UTC)"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DateTime(UTC)]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ResolutionCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ResolutionCode"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ResolutionCode]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaCode"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaCode]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaCode]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaDisplayName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaDisplayName"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaDisplayName]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaDisplayName]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaTypeCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaTypeCode"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaTypeCode]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaTypeCode]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaMapCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaMapCode"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaMapCode]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaMapCode]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ProductionType]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProductionType"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ProductionType]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ProductionType]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ActualGenerationOutput MW ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ActualGenerationOutput MW "
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ActualGenerationOutput MW ]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ActualGenerationOutput MW ]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ActualConsumption MW ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ActualConsumption MW "
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ActualConsumption MW ]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ActualConsumption MW ]" />
+                        <inputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[UpdateTime(UTC)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UpdateTime(UTC)"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[UpdateTime(UTC)]"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ResolutionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ProductionType]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductionType" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ActualGenerationOutput MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ActualGenerationOutput MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ActualConsumption MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ActualConsumption MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[TotalLoad MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TotalLoad MW " />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de destination OLE DB"
+                      synchronousInputId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+                  description="Source du fichier plat"
+                  localeId="1036"
+                  name="Source du fichier plat"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Connection_generation]"
+                      connectionManagerRefId="Package.ConnectionManagers[Connection_generation]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                      name="Sortie de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DateTime(UTC)]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]"
+                          name="DateTime(UTC)"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ResolutionCode]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]"
+                          name="ResolutionCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaCode]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaCode]"
+                          name="AreaCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaDisplayName]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaDisplayName]"
+                          name="AreaDisplayName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaTypeCode]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaTypeCode]"
+                          name="AreaTypeCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaMapCode]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaMapCode]"
+                          name="AreaMapCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ProductionType]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ProductionType]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ProductionType]"
+                          name="ProductionType"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ActualGenerationOutput MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ActualGenerationOutput MW ]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ActualGenerationOutput MW ]"
+                          name="ActualGenerationOutput MW "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ActualConsumption MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ActualConsumption MW ]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ActualConsumption MW ]"
+                          name="ActualConsumption MW "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[UpdateTime(UTC)]"
+                          length="50"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]"
+                          name="UpdateTime(UTC)"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ResolutionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ProductionType]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductionType" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ActualGenerationOutput MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ActualGenerationOutput MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ActualConsumption MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ActualConsumption MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdateTime(UTC)" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Colonne de sortie d'erreur de source de fichier plat"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          name="Colonne de sortie d'erreur de source de fichier plat" />
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Loop_generation_folder\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+                  endId="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  name="Sortie de source de fichier plat"
+                  startId="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{A306FA41-3803-4203-952D-47275B9D6A43}"
+          DTS:ObjectName="{A306FA41-3803-4203-952D-47275B9D6A43}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::file_generation" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop_Load_folder"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:Disabled="True"
+      DTS:DTSID="{224F5829-C132-46CA-92BD-0613C9A211EC}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop_Load_folder">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{8A9F35BA-6EBC-4C53-8CD0-4272719C4357}"
+        DTS:ObjectName="{8A9F35BA-6EBC-4C53-8CD0-4272719C4357}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\ActualTotalLoad_6.1.A_r3" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop_Load_folder\Tâche de flux de données"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
+          DTS:Description="Tâche de flux de données"
+          DTS:DTSID="{D78D0C5E-01E1-4F87-9A7A-0EF144C06D13}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tâche de flux de données"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+                  description="Destination OLE DB"
+                  name="Destination OLE DB"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowset">[bronze].[total_load]</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Commande SQL à exécuter."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie le mode utilisé pour accéder à la base de données."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="{4DADD913-81C6-4275-AD40-19B379C59EB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-951B3GS_SQLEXPRESS.TFF]"
+                      description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                      errorOrTruncationOperation="Insérer"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrée de destination OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[DateTime(UTC)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DateTime(UTC)"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DateTime(UTC)]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ResolutionCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ResolutionCode"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ResolutionCode]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaCode"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaCode]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaCode]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaDisplayName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaDisplayName"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaDisplayName]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaDisplayName]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaTypeCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaTypeCode"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaTypeCode]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaTypeCode]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AreaMapCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AreaMapCode"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaMapCode]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaMapCode]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[UpdateTime(UTC)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UpdateTime(UTC)"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[UpdateTime(UTC)]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]" />
+                        <inputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[TotalLoad MW ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TotalLoad MW "
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[TotalLoad MW ]"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[TotalLoad MW ]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ResolutionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[TotalLoad MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TotalLoad MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdateTime(UTC)" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de destination OLE DB"
+                      synchronousInputId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+                  description="Source du fichier plat"
+                  localeId="1036"
+                  name="Source du fichier plat"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Connection_load]"
+                      connectionManagerRefId="Package.ConnectionManagers[Connection_load]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                      name="Sortie de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DateTime(UTC)]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]"
+                          name="DateTime(UTC)"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ResolutionCode]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]"
+                          name="ResolutionCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaCode]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaCode]"
+                          name="AreaCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaDisplayName]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaDisplayName]"
+                          name="AreaDisplayName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaTypeCode]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaTypeCode]"
+                          name="AreaTypeCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaMapCode]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AreaMapCode]"
+                          name="AreaMapCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[UpdateTime(UTC)]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]"
+                          name="UpdateTime(UTC)"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[TotalLoad MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[TotalLoad MW ]"
+                          length="50"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[TotalLoad MW ]"
+                          name="TotalLoad MW "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ResolutionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[TotalLoad MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TotalLoad MW " />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Colonne de sortie d'erreur de source de fichier plat"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          name="Colonne de sortie d'erreur de source de fichier plat" />
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Loop_Load_folder\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+                  endId="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  name="Sortie de source de fichier plat"
+                  startId="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{591C5513-8FD5-419B-BA9F-4546AF8F3782}"
+          DTS:ObjectName="{591C5513-8FD5-419B-BA9F-4546AF8F3782}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::file_load" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop_physical_flow_folder"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{C1669DF4-1149-4C73-83D0-BDD9C23598CC}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop_physical_flow_folder">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{8C8371C8-4D98-418D-8B85-CBDA5D5C2FCE}"
+        DTS:ObjectName="{8C8371C8-4D98-418D-8B85-CBDA5D5C2FCE}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\PC\Documents\Projets\TFE\Datas\Electricite\Belgium\PhysicalFlows_12.1.G_r3" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop_physical_flow_folder\Tâche de flux de données"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tâche de flux de données"
+          DTS:DTSID="{1B600162-94E2-41D4-8BD7-1166E89C7017}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tâche de flux de données"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+                  description="Destination OLE DB"
+                  name="Destination OLE DB"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowset">[bronze].[flow]</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Commande SQL à exécuter."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie le mode utilisé pour accéder à la base de données."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="{4DADD913-81C6-4275-AD40-19B379C59EB2}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-951B3GS_SQLEXPRESS.TFF]"
+                      description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                      errorOrTruncationOperation="Insérer"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrée de destination OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Column 0]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Column 0"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Column 0]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Column 0]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[DateTime(UTC)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DateTime(UTC)"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DateTime(UTC)]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[ResolutionCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ResolutionCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ResolutionCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[OutAreaCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OutAreaCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[OutAreaDisplayName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OutAreaDisplayName"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaDisplayName]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaDisplayName]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[OutAreaTypeCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OutAreaTypeCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaTypeCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaTypeCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[OutAreaMapCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="OutAreaMapCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaMapCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaMapCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[InAreaCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="InAreaCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[InAreaDisplayName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="InAreaDisplayName"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaDisplayName]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaDisplayName]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[InAreaTypeCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="InAreaTypeCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaTypeCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaTypeCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[InAreaMapCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="InAreaMapCode"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaMapCode]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaMapCode]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Flow MW ]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Flow MW "
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Flow MW ]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Flow MW ]" />
+                        <inputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[UpdateTime(UTC)]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UpdateTime(UTC)"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[UpdateTime(UTC)]"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ResolutionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[OutAreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[InAreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Flow MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Flow MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdateTime(UTC)" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de destination OLE DB"
+                      synchronousInputId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+                  description="Source du fichier plat"
+                  localeId="1036"
+                  name="Source du fichier plat"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[connection_flow]"
+                      connectionManagerRefId="Package.ConnectionManagers[connection_flow]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                      name="Sortie de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Column 0]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Column 0]"
+                          name="Column 0"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DateTime(UTC)]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DateTime(UTC)]"
+                          name="DateTime(UTC)"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ResolutionCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[ResolutionCode]"
+                          name="ResolutionCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaCode]"
+                          name="OutAreaCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaDisplayName]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaDisplayName]"
+                          name="OutAreaDisplayName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaTypeCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaTypeCode]"
+                          name="OutAreaTypeCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaMapCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[OutAreaMapCode]"
+                          name="OutAreaMapCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaCode]"
+                          name="InAreaCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaDisplayName]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaDisplayName]"
+                          name="InAreaDisplayName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaTypeCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaTypeCode]"
+                          name="InAreaTypeCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaMapCode]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[InAreaMapCode]"
+                          name="InAreaMapCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Flow MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Flow MW ]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Flow MW ]"
+                          name="Flow MW "
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[UpdateTime(UTC)]"
+                          length="50"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[UpdateTime(UTC)]"
+                          name="UpdateTime(UTC)"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indique si les données sont au format binaire."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DateTime(UTC)" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[ResolutionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ResolutionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[OutAreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="OutAreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaDisplayName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaDisplayName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaTypeCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaTypeCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[InAreaMapCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="InAreaMapCode" />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Flow MW ]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Flow MW " />
+                        <externalMetadataColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[UpdateTime(UTC)]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UpdateTime(UTC)" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                      isErrorOut="true"
+                      name="Sortie d'erreur de source de fichier plat">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Colonne de sortie d'erreur de source de fichier plat"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                          name="Colonne de sortie d'erreur de source de fichier plat" />
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Loop_physical_flow_folder\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+                  endId="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  name="Sortie de source de fichier plat"
+                  startId="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{DFF54384-4EEE-4BEF-8703-FC4E2B00E24D}"
+          DTS:ObjectName="{DFF54384-4EEE-4BEF-8703-FC4E2B00E24D}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::file_flow" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C136538F-93A7-408C-A29B-488855337B56}"
+      DTS:From="Package\Loop_Load_folder"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Loop_generation_folder" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="306,185.333333333334"
+          Size="306,228"
+          Id="Package\Loop_gaz"
+          TopLeft="808.035678163704,532.105259197736" />
+        <NodeLayout
+          Size="201.333333333334,42.6666666666667"
+          Id="Package\Loop_generation_folder\Tâche de flux de données"
+          TopLeft="53.6547433448343,46.5814506934794" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="320.666666666667,144.666666666667"
+          Size="320.666666666667,187.333333333334"
+          Id="Package\Loop_generation_folder"
+          TopLeft="371.428554824421,235.563907187991" />
+        <NodeLayout
+          Size="201.333333333334,42.6666666666667"
+          Id="Package\Loop_Load_folder\Tâche de flux de données"
+          TopLeft="50.5833265719317,30.9824545777516" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="332,128.666666666667"
+          Size="332,171.333333333334"
+          Id="Package\Loop_Load_folder"
+          TopLeft="143.258922167255,42.7631574252059" />
+        <NodeLayout
+          Size="201.333333333334,42.6666666666667"
+          Id="Package\Loop_physical_flow_folder\Tâche de flux de données"
+          TopLeft="33.2129433120573,22.24561018702" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="274.666666666667,117.333333333334"
+          Size="274.666666666667,160.666666666667"
+          Id="Package\Loop_physical_flow_folder"
+          TopLeft="699.503936983705,342.932327668242" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="475.258922167255,128.429824091873">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.5029659904986,107.134083096118"
+              Start="0,0"
+              End="56.5029659904986,99.6340830961184">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="52.5029659904986,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.5029659904986,0"
+                    Point2="56.5029659904986,0"
+                    Point3="56.5029659904986,4" />
+                  <mssgle:LineSegment
+                    End="56.5029659904986,99.6340830961184" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Loop_generation_folder\Tâche de flux de données">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Loop_generation_folder\Tâche de flux de données\Source du fichier plat"
+          TopLeft="248.999992579222,114.999996572733" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB"
+          TopLeft="529.999984204769,98.6666642228762" />
+        <EdgeLayout
+          Id="Package\Loop_generation_folder\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+          TopLeft="428.999992579222,136.333329906066">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="100.999991625548,-16.3333323498568"
+              Start="0,0"
+              End="93.4999916255476,-16.3333323498568">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="46.4999958127738,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.4999958127738,0"
+                    Point2="50.4999958127738,0"
+                    Point3="50.4999958127738,-4" />
+                  <mssgle:LineSegment
+                    End="50.4999958127738,-12.3333323498568" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50.4999958127738,-12.3333323498568"
+                    Point2="50.4999958127738,-16.3333323498568"
+                    Point3="54.4999958127738,-16.3333323498568" />
+                  <mssgle:LineSegment
+                    End="93.4999916255476,-16.3333323498568" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop_generation_folder\Tâche de flux de données\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Loop_Load_folder\Tâche de flux de données">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Loop_Load_folder\Tâche de flux de données\Source du fichier plat"
+          TopLeft="168.999994963408,109.999996721745" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB"
+          TopLeft="516.9999845922,112.999996632338" />
+        <EdgeLayout
+          Id="Package\Loop_Load_folder\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+          TopLeft="348.999994963408,132.833330010375">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="167.999989628792,0"
+              Start="0,0"
+              End="160.499989628792,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="160.499989628792,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop_Load_folder\Tâche de flux de données\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Loop_physical_flow_folder\Tâche de flux de données">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="180,42.6666666666667"
+          Id="Package\Loop_physical_flow_folder\Tâche de flux de données\Source du fichier plat"
+          TopLeft="75.6249966192991,146.421051023905" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB"
+          TopLeft="353.124984214083,146.421051023905" />
+        <EdgeLayout
+          Id="Package\Loop_physical_flow_folder\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+          TopLeft="255.624996619299,167.754384357238">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.4999875947835,0"
+              Start="0,0"
+              End="89.9999875947835,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="89.9999875947835,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop_physical_flow_folder\Tâche de flux de données\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
