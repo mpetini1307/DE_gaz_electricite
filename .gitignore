@@ -1,6 +1,6 @@
 .venv/
 Datas/
 .env
-C:\Users\PC\Documents\Projets\TFE\Scripts\to_bronze\Ingestion_to_sql\Ingestion_to_sql
-C:\Users\PC\Documents\Projets\TFE\Scripts\to_bronze\Ingestion_to_sql\Ingestion_to_sql.sln
-C:\Users\PC\Documents\Projets\TFE\Scripts\to_bronze\Ingestion_to_sql\.vs
+Scripts/to_bronze/Ingestion_to_sql/Ingestion_to_sql/
+Scripts/to_bronze/Ingestion_to_sql/Ingestion_to_sql.sln
+Scripts/to_bronze/Ingestion_to_sql/.vs/
