@@ -1,7 +1,7 @@
 02/10 - dl des données gaz +- 4h
 04/10 dl-elec +- 4h
 05/10 dl-elec_belgium 3h + 6h ingestion bronze
-
+06/10 dl - demo+environnement+country : bronze fini 5h 
 Difficulté de jointure de 2 sources différentes : 
     - pas la même granularité temporelle
     - pas la même normalisation consommation/production/transmission
